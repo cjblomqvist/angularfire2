@@ -2,8 +2,8 @@
   "name": "angularfire2",
   "version": "2.0.0-beta.0",
   "description": "",
-  "main": "./dist/angularfire2.js",
-  "jsnext:main": "./dist/es6/angularfire2.js",
+  "main": "./angularfire2.js",
+  "jsnext:main": "./es6/angularfire2.js",
   "scripts": {
     "test": "npm run build; karma start",
     "docs": "typedoc --out docs/api/ --module commonjs --mode modules --name AngularFire2 src",
@@ -29,15 +29,6 @@
     "url": "https://github.com/angular/indy/issues"
   },
   "homepage": "https://github.com/angular/indy#readme",
-  "dependencies": {
-    "@angular/core":  "2.0.0-rc.1",
-    "@angular/platform-browser": "2.0.0-rc.1",
-    "@angular/common": "2.0.0-rc.1",
-    "@angular/compiler": "2.0.0-rc.1",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
-    "firebase": "2.4.2",
-    "rxjs": "5.0.0-beta.6"
-  },
   "devDependencies": {
     "es6-module-loader": "^0.17.10",
     "es6-shim": "^0.35.0",
@@ -67,5 +58,14 @@
     "typings": "^0.6.2",
     "zone.js": "^0.6.6"
   },
-  "typings": "dist/angularfire2.d.ts"
+  "typings": "angularfire2.d.ts",
+  "peerDependencies": {
+    "@angular/core": "2.0.0-rc.1",
+    "@angular/platform-browser": "2.0.0-rc.1",
+    "@angular/common": "2.0.0-rc.1",
+    "@angular/compiler": "2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
+    "firebase": "2.4.2",
+    "rxjs": "5.0.0-beta.6"
+  }
 }
